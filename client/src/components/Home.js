@@ -28,7 +28,7 @@ const Home = ({ socket }) => {
   };
 
   return (
-    <div className="flex justify-center h-screen py-20">
+    <div className="flex justify-center h-screen pt-20 pb-36">
       <form
         onSubmit={onSubmit}
         className="flex flex-col justify-between w-11/12 max-w-md"
