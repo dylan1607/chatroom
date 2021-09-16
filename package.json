@@ -1,0 +1,26 @@
+{
+  "name": "chatapplication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client \""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylan1607/chatroom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylan1607/chatroom/issues"
+  },
+  "homepage": "https://github.com/dylan1607/chatroom#readme",
+  "dependencies": {
+    "concurrently": "^6.2.1"
+  }
+}
