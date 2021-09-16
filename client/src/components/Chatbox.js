@@ -1,7 +1,7 @@
 const Chatbox = ({ message, username, currentUser }) => {
   return (
     <div className="w-screen">
-      <div className={`${currentUser ? "mr-3 ml-auto" : "ml-3 mr-auto"} w-60`}>
+      <div className={`${currentUser ? "mr-6 ml-auto" : "ml-6 mr-auto"} w-60`}>
         <p>{!currentUser && username}</p>
         <div
           className={`${currentUser ? "bg-box text-white" : "bg-tint"}
