@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const app = express();
+const path = require('path');
 const socket = require("socket.io");
 const cors = require("cors");
 const connectDB = require("./config/database");
@@ -12,7 +13,10 @@ const {
 } = require("./utils/userUtils");
 const { createRoom, updateRoom } = require("./utils/databaseUtils");
 
-app.use(express());
+app.use(express.static(path.join(__dirname, 'build')));
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 app.use(cors());
 
 const PORT = process.env.PORT || 8000;
