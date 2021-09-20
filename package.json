@@ -8,8 +8,6 @@
     "server": "cd server && npm start",
     "client": "cd client && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client \"",
-    "product": "concurrently \"npm run server\" \"cd client && serve -s build -l 3000\""
-
   },
   "repository": {
     "type": "git",
