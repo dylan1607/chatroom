@@ -1,6 +1,6 @@
 # Chatroom -- Technical Test
 
-###   [LINK DEMO](http://54.255.249.106:3000)
+###   [LINK DEMO](http://54.255.249.106:8000)
 
 <p>
 <img src="https://user-images.githubusercontent.com/67869620/133590266-32b62035-edef-4c8b-9f0f-09c63814dba9.jpg" alt="drawing" width="250"/>
@@ -77,7 +77,7 @@ pm2 start --name chatroom npm -- run dev
     - Message from user should show on the right side. Message from another user on the left side
 
 2. Deloyment Process:
-  [LINK DEMO](http://54.255.249.106:3000)
+  [LINK DEMO](http://54.255.249.106:8000)
   
 ### What can be improved
 
