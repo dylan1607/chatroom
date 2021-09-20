@@ -60,11 +60,18 @@ cd chatroom
     ```
     - Install MongoDB: [Link for instruction](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-amazon/)
 5. Clone the project ```git clone https://github.com/dylan1607/chatroom.git``` and install neccessary dependencies
-6. Deloy server and client
-```bash
-cd chatroom
-pm2 start --name chatroom npm -- run dev
-```
+6. Build production 
+    ```bash 
+    cd chatroom
+    cd client
+    npm run build
+    mv ~/chatroom/client/build ~/chatroom/server
+    ```
+8. Deloy server and client
+    ```bash
+    cd chatroom
+    pm2 start --name chatroom npm -- run server
+    ```
 8. Configure Security Group AWS
 9. Test app. The hostname is the "Public DNS (IPv4)" property located on the instance description tab in the AWS Console.
 
