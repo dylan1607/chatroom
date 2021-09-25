@@ -1,4 +1,4 @@
-# Chatroom -- Technical Test
+# Chatroom -- Realtime
 
 ### [LINK](https://roomchat-realtime.herokuapp.com/)
 
